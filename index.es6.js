@@ -16,8 +16,8 @@ read.i32be = function*() { return (yield 4).readInt32BE(0, true) }
 read.f32le = function*() { return (yield 4).readFloatLE(0, true) }
 read.f32be = function*() { return (yield 4).readFloatBE(0, true) }
 
-read.f64le = function*() { return (yield 4).readDoubleLE(0, true) }
-read.f64be = function*() { return (yield 4).readDoubleBE(0, true) }
+read.f64le = function*() { return (yield 8).readDoubleLE(0, true) }
+read.f64be = function*() { return (yield 8).readDoubleBE(0, true) }
 
 read.le =
   { __proto__: read
