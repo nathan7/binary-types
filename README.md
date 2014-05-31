@@ -24,6 +24,10 @@ function* parser() {
 ### u16be
 ### u32le
 ### u32be
+### f32le
+### f32be
+### f64le
+### f64be
 
   what it says on the tin.
 
@@ -34,6 +38,8 @@ read.le =
   { __proto__: read
   , u16: read.u16le
   , u32: read.u32le
+  , f32: read.f32le
+  , f64: read.f64le
   }
 ```
 
@@ -44,6 +50,8 @@ read.be =
   { __proto__: read
   , u16: read.u16be
   , u32: read.u32be
+  , f32: read.f32be
+  , f64: read.f64be
   }
 ```
 

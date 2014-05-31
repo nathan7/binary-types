@@ -13,14 +13,24 @@ read.i16be = function*() { return (yield 2).readInt16BE(0, true) }
 read.i32le = function*() { return (yield 4).readInt32LE(0, true) }
 read.i32be = function*() { return (yield 4).readInt32BE(0, true) }
 
+read.f32le = function*() { return (yield 4).readFloatLE(0, true) }
+read.f32be = function*() { return (yield 4).readFloatBE(0, true) }
+
+read.f64le = function*() { return (yield 4).readDoubleLE(0, true) }
+read.f64be = function*() { return (yield 4).readDoubleBE(0, true) }
+
 read.le =
   { __proto__: read
   , u16: read.u16le
   , u32: read.u32le
+  , f32: read.f32le
+  , f64: read.f64le
   }
 
 read.be =
   { __proto__: read
   , u16: read.u16be
   , u32: read.u32be
+  , f32: read.f32be
+  , f64: read.f64be
   }
