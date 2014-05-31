@@ -1,6 +1,6 @@
 {
   "name": "binary-types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "helpers for binary-parser",
   "main": "index.js",
   "repository": {
