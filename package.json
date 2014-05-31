@@ -1,0 +1,29 @@
+{
+  "name": "binary-types",
+  "version": "1.0.0",
+  "description": "helpers for binary-parser",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/binary-types.git"
+  },
+  "keywords": [
+    "binary",
+    "parser",
+    "reader",
+    "read",
+    "bytes"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/binary-types/issues"
+  },
+  "homepage": "https://github.com/nathan7/binary-types",
+  "scripts": {
+    "prepublish": "regenerator -r index.es6.js > index.es5.js"
+  },
+  "devDependencies": {
+    "regenerator": "^0.4.8"
+  }
+}
