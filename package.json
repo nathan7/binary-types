@@ -25,5 +25,8 @@
   },
   "devDependencies": {
     "regenerator": "^0.4.8"
+  },
+  "browser": {
+    "./read.js": "./read.es5.js"
   }
 }
