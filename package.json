@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nathan7/binary-types",
   "scripts": {
-    "prepublish": "regenerator -r index.es6.js > index.es5.js"
+    "prepublish": "regenerator -r read.es6.js > read.es5.js"
   },
   "devDependencies": {
     "regenerator": "^0.4.8"
